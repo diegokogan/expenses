@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
         verticalLayout {
             padding = dip(30)
             var expense: EditText? = null
-            arrayListOf(
+            listOf(
                     textView {
                         text = "Carrefour"
                         backgroundColor = Color.BLUE
@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
                         }
                     }.lparams(width = wrapContent)
             )
-
             expense = editText {
                 hint = "Expense"
                 textSize = 24f
